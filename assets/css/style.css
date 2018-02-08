@@ -16,8 +16,20 @@ h1, h2, h3 {
 h2, h3 {
     color: #4aaaa5;
     font-weight: bold;
+    position: relative;
 }
 
+h2:after {
+    content: " ";
+    height: 1px; 
+    color: #4aaaa5;
+    width: 80%; 
+    margin: 0 auto; 
+    left: 0;
+    right: 0; 
+    bottom: -3px;
+    position: absolute;
+}
 
 
 
@@ -43,6 +55,20 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+
+}
+
+.aboutlink:hover,
+.contactlink:hover,
+.portfoliolink:hover {
+    font-size: 120%;
+    font-weight: bold;
+    transition-delay: .25s;
+}
+
+.currentpage {
+    color: #4aaaa5;
+;
 }
 
 h1 {
